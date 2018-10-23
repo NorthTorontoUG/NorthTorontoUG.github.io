@@ -2,14 +2,34 @@
 <head>
 	<title>North Toronto Cloud & DevOps User Group</title>
 	<style>
-		html {
-			font-size: 12px;	/* root font-size */
+		@media screen and (min-width: 860px) {
+		  h1 {
+			font-size: 36px;
+		  }
+		}
+
+		@media screen and (max-width: 600px) {
+		  h1 {
+			font-size: 20px;
+		  }
+		}
+
+		@media screen and (max-width: 500px) {
+		  h1 {
+			font-size: 16px;
+		  }
+		}
+
+		@media screen and (max-width: 450px) {
+		  h1 {
+			font-size: 13px;
+		  }
 		}
 		
 		body {
 			background-color: #000;
 			color: yellow;
-			text-shadow: 2px 2px #333;
+			text-shadow: 2px 2px #2e2e2e;
 			font-family: "Arial Black", Gadget, sans-serif;
 			font-weight: normal;
 			display: flex;
@@ -18,11 +38,12 @@
 		}
 
 		a { 
-			color: yellow;
+			color: #fff;
 			text-decoration : none;
 		}
 		
 		a:hover { 
+			color: yellow;
 			background-color: green;
 			padding: 20px;
 		}
